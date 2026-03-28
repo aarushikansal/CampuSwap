@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CampusSwap</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1>CampusSwap</h1>
+  <p class="tagline">Link it. List it. Leave the waste.</p>
+
+  <div class="container">
+    
+    <!-- Add Item -->
+    <div class="form">
+      <h2>List an Item</h2>
+      <input type="text" id="title" placeholder="Item name">
+      <input type="text" id="category" placeholder="Category">
+      <select id="status">
+        <option>Available</option>
+        <option>Reserved</option>
+        <option>Gone</option>
+      </select>
+      <button onclick="addItem()">Add Item</button>
+    </div>
+
+    <!-- Items List -->
+    <div class="items">
+      <h2>Available Items</h2>
+      <ul id="itemList"></ul>
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
